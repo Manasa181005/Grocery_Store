@@ -7,8 +7,8 @@ let login = asyncHandler(async (req, res) => {
     if (user) {  
         res.json({ status: true, user: user });
     }
-    else {
+    else  {
         res.json({ status: false });
     }
-})
+} )
 module.exports =  { login }
