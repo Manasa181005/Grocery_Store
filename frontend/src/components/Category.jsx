@@ -1,8 +1,8 @@
 import React from 'react'
 import CategoryItem from './CategoryItem'
 
-export default function Category() {
-  return (
+export default function Category()  {
+  return   (
     <div className='Category'>
       <h3 className='Cheading'>Category</h3>
       <div className="CategoryList">
@@ -13,6 +13,7 @@ export default function Category() {
         <CategoryItem imgUrl="./household.jpg" title="Household"></CategoryItem>
        
       </div>
+      
       <div className="CategoryList">
       
         <CategoryItem imgUrl="./personalCare.jpg" title="Personal Care"></CategoryItem>
@@ -22,5 +23,5 @@ export default function Category() {
        
       </div>
     </div>
-  )
-}
+    )
+   }
