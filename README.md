@@ -1,7 +1,7 @@
 Grocify
 Grocery Store
 
----
+----
 **NOTE**
 
 Note:
@@ -22,11 +22,11 @@ Install and add dependencies for both the frontend and backend. Use package mana
 <br /><br />
 Running Servers:
 <br />
-Start by running both the frontend and backend servers. This ensures that the development environment is properly set up and ready for further implementation. You can use commands like npm start or yarn start to run the servers for each component.
+Start by running both the frontend and backend servers. This ensures that the development environment is properly set up and ready for the further implementation. You can use commands like npm start or yarn start to run the servers for each component.
 
 ---
 <br /><br />
-The purpose of Grocify is to establish a user-centric online grocery shopping platform, leveraging a combination of HTML, CSS, JavaScript, and React to provide a seamless and visually engaging experience. Grocify aspires to offer a contemporary, responsive, and intuitive interface that simplifies the grocery shopping process. The website's core objective is to enable users to effortlessly browse, select, and purchase grocery items. 
+The purpose of Grocify is to establish a user-centric online grocery shopping platform, leveraging a combination of the HTML, CSS, JavaScript, and React to provide a seamless and visually engaging experience. Grocify aspires to offer a contemporary, responsive, and intuitive interface that simplifies the grocery shopping process. The website's core objective is to enable users to effortlessly browse, select, and purchase grocery items. 
 <br /><br /><br />
 Grocify's responsive design ensures a smooth experience across various devices, and its modern user interface enhances user interaction. Users can conveniently access key features through a persistent navigation bar, including Home, Shop, Sign Up, and Cart, with real-time item count updates. 
 <br /><br /><br />
@@ -45,7 +45,7 @@ Navigation Bar: A fixed navigation bar serves as the gateway to essential sectio
 <br /><br />
 Landing Page: The landing page serves as the website's welcoming gateway, featuring an inspiring quote, the website's rating, and carefully selected images to create an inviting atmosphere. 
 <br /><br />
-Categories: Grocify presents users with a range of product categories, simplifying the process of locating specific grocery items. 
+Categories: Grocify presents users with a range of product categories, simplifying  process of locating specific grocery items. 
 <br /><br />
 ![Alt text](image-1.png)
 <br /><br />
@@ -71,7 +71,7 @@ Grocify's primary aim is to provide users with an attractive, user-friendly, and
 <br /><br />
 ![Alt text](image-7.png)
 <br /><br />
-The scope of Grocify, the online grocery website, covers a user-friendly and responsive platform for grocery shopping. Using HTML, CSS, JavaScript, and React, the website offers a modern interface with key components: a fixed navigation bar, landing page, product categories, shop items, About Us section, product filtering, login/sign-up, and a cart. The scope emphasizes efficient product selection, cart management, and user authentication, aiming to create a seamless and visually appealing online grocery shopping experience for users.
+The scope of the Grocify, the online grocery website, covers a user-friendly and responsive platform for grocery shopping. Using HTML, CSS, JavaScript, and React, the website offers a modern interface with key components: a fixed navigation bar, landing page, product categories, shop items, About Us section, product filtering, login/sign-up, and a cart. The scope emphasizes efficient product selection, cart management, and user authentication, aiming to create a seamless and visually appealing online grocery shopping experience for users.
 <br /><br />
 ![Alt text](image-8.png)
 <br /><br />
