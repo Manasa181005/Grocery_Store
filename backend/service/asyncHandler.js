@@ -1,9 +1,9 @@
-const asyncHandler = (fn) => async (req, res, next) => {
+const asyncHandler = (fn) => async (req, res, next) =>{
     try {
         await fn(req, res, next)
-    } catch (error) {
+    } catch (error)   {
         console.log(error)
-        res.json({status:false,message:error})
+        res.json({status:false,message:error} )
     }
 }
-module.exports = {asyncHandler};
+module.exports = {asyncHandler} ;
