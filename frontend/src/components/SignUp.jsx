@@ -7,13 +7,14 @@ export default function SignUp() {
     const password = useRef();
     const confirmPassword = useRef();
     const navigate = useNavigate();
-    let handleSubmit = (event) => {
+    let handleSubmit = (event) =>  {
+        
         event.preventDefault();
 
         let hasEmptyValue = false;
 
         for (let key in form) {
-            let val = form[key];
+            let val = form[key] ;
 
             if (key === "email") {
                 if (val.length === 0) {
@@ -22,6 +23,7 @@ export default function SignUp() {
                 } else {
                     email.current.style.borderColor = "black";
                 }
+                
             }
 
             if (key === "userName") {
@@ -41,6 +43,7 @@ export default function SignUp() {
                     password.current.style.borderColor = "black";
                 }
             }
+            
 
             if (key === "confirmPassword") {
                 if (val.length === 0) {
@@ -51,6 +54,7 @@ export default function SignUp() {
                 }
             }
         }
+        
 
         if (hasEmptyValue) {
             return;
@@ -74,10 +78,11 @@ export default function SignUp() {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify(form),
-        }).then(
+        } ).then(
             (res) => {
                 return res.json();
             }
+            
         ).then((data) => {
             if (data.status) {
                 navigate('/Login');
@@ -85,14 +90,14 @@ export default function SignUp() {
             else {
                 alert("check your information again")
             }
-        })
+        } )
             .catch((err) => {
                 console.log(err)
-            })
+            } )
 
-    };
+    } ;
 
-    return (
+    return  (
         <div className="LoginWindow">
             <form className='LoginForm' onSubmit={(e) => { handleSubmit(e) }}>
                 <span className='LoginTitle'>Create your account</span>
@@ -118,5 +123,6 @@ export default function SignUp() {
                 <p className='loginfooter'>Alreay have an account <Link to="/Login">log in</Link></p>
             </form>
         </div>
+   
     )
 }
