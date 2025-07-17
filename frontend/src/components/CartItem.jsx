@@ -1,14 +1,14 @@
 import React, { useContext, useState } from 'react'
 import { UserContext } from '../Store'
 
-export default function CartItem(props) {
+export default function CartItem(props)  {
     const store = useContext(UserContext)
     const [val, setVal] = useState(store.hash.has(props.data.name) ? store.hash.get(props.data.name) : 0)
     const handleL = () => {
         if (val !== 0) {
-            if (store.cartList.some((e) => {
+            if (store.cartList.some((e) =>{
                 return (e.name === props.data.name) && e["itemCount"] === 1
-            })) {
+            } ) )   {
                 let cost = { "subcost": 0, "discount": 0, "tax": 0, "total": 0 }
                 let temphash = store.hash;
                 let temp = store.cartList.filter((e) => {
@@ -17,24 +17,24 @@ export default function CartItem(props) {
                         temphash.set(props.data.name, 0)
 
                         return false;
+                        
                     }
-                    else {
+                    else{
                         cost.subcost = cost.subcost + e["itemCount"] * e.price;
                         cost.total = cost.total + e["itemCount"] * e.price;
                         return true;
                     }
-                })
+                }  )
                 store.setHash(temphash)
                 store.setCartDetail(cost)
                 store.setcartList(temp)
                 setVal(temphash.get(props.data.name))
             }
-            else {
+            else  {
                 let cost = { "subcost": 0, "discount": 0, "tax": 0, "total": 0 }
                 let temphash = store.hash;
-                let temp = store.cartList.map((e) => {
+                let temp = store.cartList.map((e) =>  {
                     if (e.name === props.data.name) {
-
                         let obj = e
                         obj["itemCount"] = obj["itemCount"] - 1;
                         cost.subcost = cost.subcost + obj["itemCount"] * e.price;
