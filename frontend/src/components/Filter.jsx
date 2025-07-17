@@ -1,11 +1,12 @@
 import React from 'react'
 
-export default function Filter() {
-  const FilterList = ["All", "Dairy", "Fruit", "Household", "Snacks", "Vegetable"]
+export default function Filter()  {
+  const FilterList = ["All", "Dairy", "Fruits", "Household", "Snacks", "Vegetable"]
   return (
     <div className="ShopPageFirstSection">
 
       <div className="FilterHead">
+        
         <div className="FilterFirst">
           <span className='FilterFirstSvg'>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list-task" viewBox="0 0 16 16">
@@ -29,9 +30,9 @@ export default function Filter() {
               <input type="checkbox" name="" id={ele} />
               <label htmlFor={ele}> {ele}</label>
             </div>
-          })}
+          } ) }
         </div>
       </div>
     </div>
-  )
-}
+    )
+ }
