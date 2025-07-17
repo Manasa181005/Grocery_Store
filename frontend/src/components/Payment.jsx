@@ -2,7 +2,7 @@ import React, { useContext, useRef, useState } from 'react'
 import { UserContext } from '../Store'
 import { useNavigate } from 'react-router-dom'
 
-export default function Payment() {
+export default function Payment()  {
     const store = useContext(UserContext)
     const [form, setForm] = useState({ cardHolderName: "", cardNumber: "", Expiry_Date_MM: "", Expiry_Date_YY: "", CVV: "", total: store.cartDetail.total })
     const cardHolderName = useRef()
@@ -11,7 +11,7 @@ export default function Payment() {
     const Expiry_Date_YY = useRef()
     const CVV = useRef()
     const navigate = useNavigate();
-    let handleClick = (e) => {
+    let handleClick = (e) =>   {
         e.preventDefault();
         let user = localStorage.getItem("user")
         if (!user) return
@@ -25,16 +25,16 @@ export default function Payment() {
         CVV.current.style.borderColor = "black"
         let isCorrect = true
         if (form.cardHolderName.length === 0) {
-            cardHolderName.current.style.borderColor = "red";
+            cardHolderName.current.style.borderColor = "blue";
             isCorrect = false;
         }
         if (form.cardNumber.length === 0 || !Number.isInteger(Number(form.cardNumber)) || form.cardNumber.length !== 16) {
-            cardNumber.current.style.borderColor = "red";
+            cardNumber.current.style.borderColor = "blue";
             isCorrect = false;
         }
 
         if (form.Expiry_Date_MM.length === 0 || !Number.isInteger(Number(form.Expiry_Date_MM)) || form.Expiry_Date_MM.length !== 2) {
-            Expiry_Date_MM.current.style.borderColor = "red";
+            Expiry_Date_MM.current.style.borderColor = "blue";
             isCorrect = false;
         }
 
@@ -44,7 +44,7 @@ export default function Payment() {
         }
 
         if (form.CVV.length === 0 || !Number.isInteger(Number(form.CVV)) || form.CVV.length !== 3) {
-            CVV.current.style.borderColor = "red";
+            CVV.current.style.borderColor = "blue";
             isCorrect = false;
         }
         console.log("s")
