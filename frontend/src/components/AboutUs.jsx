@@ -1,7 +1,8 @@
 import React from 'react'
 
-export default function AboutUs() {
-  return (
+export default function AboutUs()  {
+  return  (
+    
     <div className='AboutUs' id='AboutUs'>
         <h1>About Us</h1>
         <div className="AboutSection">
@@ -10,4 +11,5 @@ export default function AboutUs() {
         </div>
     </div>
   )
+  
 }
