@@ -8,28 +8,27 @@ const express = require("express")
 
 const app = express();
 
-
-// Cors
-var corsOptions = {
+  // Cors
+var corsOptions ={
     origin: process.env.ORIGIN,
 }
 app.use(cors(corsOptions))
 
-// Port 
+//   Ports
 const PORT = process.env.PORT || 4000
 
-// app
+//  app
 app.use(express.json())
 app.use("/api", router)
 
 
-// db configuration
-dbConfig().then(async () => {
+//  db  configuration
+dbConfig().then(async () =>{
     console.log("db configuration")
     app.listen(PORT, () => console.log("server start"));
     mongoose.connection.on("connected", () => {
         console.log("Connect");
-    });
+    } ) ;
 }).catch((err) => {
     console.log("error occurred: ")
-});
+} ) ;
