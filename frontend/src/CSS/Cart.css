@@ -1,27 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&display=swap');
 
-.CartPage {
+.CartPage  {
     margin-top: 100px;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; 
+    
 }
 
-.CartPageHeading {
+.CartPageHeading{
     width: 85%;
     font-size: 1.8rem;
     font-family: Arial, Helvetica, sans-serif;
-}
+  }
 
-.CartWindow {
+.CartWindow{
     margin-top: 50px;
     width: 90%;
     display: flex;
 }
 
-.CartList {
+.CartList  {
     position: relative;
     display: flex;
     justify-content: center;
@@ -29,7 +30,7 @@
     flex-direction: column;
     width: 70%;
     /* height: 50px; */
-    /* border: 1px solid black; */
+    /* border: 1px solid black;   */
 }
 
 .CartItem {
@@ -224,8 +225,6 @@
 }
 
 
-
-
 .CartPageHeading {
 
     font-family: 'Dancing Script', cursive;
@@ -246,8 +245,8 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: calc(100vh - 70px);
-}
+    height: calc(100vh - 70px) ;
+ }
 
 .PaymentWindow {
     /* background-color: aliceblue; */
@@ -812,7 +811,7 @@
     color: #656565;
     text-align: center;
     font-size: .7rem;
-}
+ }
 .CVV input {
     outline: none;
     color: #656565;
@@ -824,5 +823,6 @@
     border-bottom-left-radius: 25px;
     padding: 0px 10px;
     font-size: .7rem;
+}
 }
 }
