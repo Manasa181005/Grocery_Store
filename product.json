@@ -1,8 +1,9 @@
 [
+    
     {
       "name": "Pineapple",
       "imgUrl": "https://lh3.googleusercontent.com/d/15tmniwp0w_i3hE0lpSXHe_fGkyOeLdNZ",
-      "category": "fruit",
+      "category": "fruits",
       "text": "1kg",
       "price": 200,
       "stock": 5
@@ -10,7 +11,7 @@
     {
       "name": "Avocado",
       "imgUrl": "https://lh3.googleusercontent.com/d/12lUzabM28_qux2GsH6bHboLoyvDIYAqR",
-      "category": "fruit",
+      "category": "fruits",
       "text": "1kg",
       "price": 350,
       "stock": 5
@@ -18,7 +19,7 @@
     {
       "name": "Papaya",
       "imgUrl": "https://lh3.googleusercontent.com/d/1tlyAsETh-E_WRxpDe1AIH0oLfPySG1iw",
-      "category": "fruit",
+      "category": "fruits",
       "text": "1kg",
       "price": 100,
       "stock": 5
@@ -26,7 +27,7 @@
     {
       "name": "Apple",
       "imgUrl": "https://lh3.googleusercontent.com/d/14T5RJIlX7mMg0KNV9KDzlRXyKVm0TpEB",
-      "category": "fruit",
+      "category": "fruits",
       "text": "3kg",
       "price": 100,
       "stock": 5
@@ -34,7 +35,7 @@
     {
       "name": "Kevin",
       "imgUrl": "https://lh3.googleusercontent.com/d/1Hw32BcdFSzXW-4a0xmbB5tdGL2Gh4La2",
-      "category": "fruit",
+      "category": "fruits",
       "text": "1kg",
       "price": 500,
       "stock": 5
@@ -42,7 +43,7 @@
     {
       "name": "Orange",
       "imgUrl": "https://lh3.googleusercontent.com/d/1QV1_4vszU642YAdxkpzk2zRB2JygsVgN",
-      "category": "fruit",
+      "category": "fruits",
       "text": "1kg",
       "price": 90,
       "stock": 5
@@ -50,7 +51,7 @@
     {
       "name": "Pear",
       "imgUrl": "https://lh3.googleusercontent.com/d/1kzjy3WMAwCVBq4YuSvn1SariZeSikFeu",
-      "category": "fruit",
+      "category": "fruits",
       "text": "1kg",
       "price": 100,
       "stock": 5
@@ -58,7 +59,7 @@
     {
       "name": "Strawberry",
       "imgUrl": "https://lh3.googleusercontent.com/d/1qP_oRTSiVdDkh3g7Qe7gQz7t-PvvT93h",
-      "category": "fruit",
+      "category": "fruits",
       "text": "1kg",
       "price": 200,
       "stock": 5
@@ -103,6 +104,7 @@
       "price": 60,
       "stock": 5
     },
+    
     {
       "name": "Beets",
       "imgUrl": "https://lh3.googleusercontent.com/d/1fNmqiguOtpKQ5PEFBb4vA9SfsOGWHiKE",
@@ -111,6 +113,7 @@
       "price": 50,
       "stock": 5
     },
+    
     {
       "name": "Broccoli",
       "imgUrl": "https://lh3.googleusercontent.com/d/1Dj2PpIUG-muEad0X5bRkJQlMXyGMgevg",
@@ -127,6 +130,7 @@
       "price": 80,
       "stock": 5
     },
+    
     {
       "name": "Cauliflower",
       "imgUrl": "https://lh3.googleusercontent.com/d/1JufpVw5ByJ-u5VEL_-8QPXss_58VanTE",
@@ -231,6 +235,7 @@
       "price": 200,
       "stock": 8
     },
+    
     {
       "name": "Shampoo",
       "imgUrl": "https://lh3.googleusercontent.com/d/1F6QFxCYb_1kCDz90wVp1rLbGV3utzUSC",
@@ -239,4 +244,5 @@
       "price": 150,
       "stock": 7
     }
+    
 ]
