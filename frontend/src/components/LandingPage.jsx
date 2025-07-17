@@ -1,9 +1,10 @@
 import React from 'react'
 
 
-export default function LandingPage() {
+export default function LandingPage()   {
 
   return (
+    
     <>
       <div className='LandingPage'>
         <div className="LandingCon">
@@ -75,9 +76,10 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
+    
     </>
+ 
   )
-}
+  }
