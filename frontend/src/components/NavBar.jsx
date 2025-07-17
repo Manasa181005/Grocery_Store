@@ -4,14 +4,16 @@ import { Link } from 'react-router-dom'
 import { UserContext } from '../Store'
 
 
-export default function NavBar() {
+export default function NavBar(){
     const [isOpen, setIsOpen] = useState(false)
     const store = useContext(UserContext)
     const variants = {
         open: { opacity: 1, x: 0 },
-        closed: { opacity: 0, x: "-100%" },
+        closed: { opacity: 0, x: "-100%" } ,
+        
     }
     return (
+        
         <nav>
             <span className='headingNav'  ><Link to="/">Grocify </Link></span>
             <ul className='navLi'>
@@ -56,7 +58,6 @@ export default function NavBar() {
                     <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                 </svg>
             </button>
-
             <motion.nav className='mobileNav'
                 animate={isOpen ? "open" : "closed"}
                 variants={variants}>
@@ -84,4 +85,5 @@ export default function NavBar() {
             </motion.nav>
         </nav>
     )
+
 }
