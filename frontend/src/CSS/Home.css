@@ -1,4 +1,4 @@
-.LandingPage {
+ .LandingPage {
     margin-top: 70px;
     /* position: relative; */
     display: flex;
@@ -6,22 +6,22 @@
     /* align-items: center; */
     width: 100vw;
 
-    /* height: 100vh; */
+    /*  height: 100vh; */
     /* background-color: #222; */
     /* background-color: white; */
-}
+ }
 
-.FirstHalf {
+.FirstHalf  {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
     height: 100%;
-}
+ }
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&display=swap');
 
-.LandingCon {
+.LandingCon  {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,20 +30,20 @@
     /* border: 1px solid black; */
 }
 
-.Lheading {
+.Lheading{
     width: 80%;
     text-align: center;
     font-size: 4rem;
     font-family: 'Dancing Script', cursive;
     font-family: 'Playfair Display', serif;
-}
+ }
 
-.LQ {
+.LQ{
     display: flex;
     justify-content: space-between;
     width: 100%;
     /* border: 1px solid black; */
-}
+ }
 
 .LQ1 {
     display: flex;
@@ -84,6 +84,7 @@
 
     display: flex;
     justify-content: space-between;
+    
 }
 
 .L1itemB1 {
@@ -109,7 +110,7 @@
     padding: 0;
 }
 
-.L1itemRB1 {
+.L1itemRB1  {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -166,7 +167,7 @@
 .landingIntro h3 {
     color: black;
     background-color: white;
-    font-weight: 500;
+    font-weight: 501;
     margin: 0px;
     margin-bottom: 5px;
     font-size: 2.5rem;
