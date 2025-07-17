@@ -3,9 +3,9 @@ import CartItem from './CartItem'
 import { Link } from 'react-router-dom'
 import { UserContext } from '../Store'
 
-export default function Cart() {
+export default function Cart()  {
   const store=useContext(UserContext)
-  return (
+  return  (
     <div className='CartPage'>
       <h1 className='CartPageHeading'>Your Cart List</h1>
       <div className="CartWindow">
@@ -14,7 +14,8 @@ export default function Cart() {
           {store.cartList.map((ele)=>{
             console.log(ele)
             return <CartItem key={ele.name} data={ele}></CartItem>
-          })}
+          }  ) }
+
           
         </div>
 
@@ -46,6 +47,8 @@ export default function Cart() {
 
         </div>
       </div>
-    </div>
-  )
-}
+  </div>
+    
+
+  ) 
+  }
