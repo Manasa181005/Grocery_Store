@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Offers() {
   return (
+    
     <div className='Offers'>
       <div className="OfferList">
         <img src="./BG1.png" alt="..." className='OffersImg' />
@@ -12,6 +13,7 @@ export default function Offers() {
           <button className='OfferBtn'>Shop</button>
         </div>
       </div>
+      
     </div>
   )
 }
