@@ -1,12 +1,12 @@
 import { UserContext } from '../Store'
 import Product from './Product'
 import React, { useContext, useEffect, useRef, useState } from 'react'
-export default function Shop() {
+export default function Shop(){
     let store = useContext(UserContext)
     const [topicsList, settopicsList] = useState([])
     const [search, setSearch] = useState("");
-    const TopicOnClick = (e, name) => {
-        if (e.currentTarget.classList.contains('Topic')) {
+    const TopicOnClick =(e, name) =>  {
+        if (e.currentTarget.classList.contains('Topic')){
 
             e.currentTarget.classList.remove("Topic")
             e.currentTarget.classList.add("targetTopic")
@@ -20,6 +20,7 @@ export default function Shop() {
             let temp = store.searchList
             temp.delete(name)
             store.setsearchList(temp)
+            
             // console.log(store.searchList)
         }
 
