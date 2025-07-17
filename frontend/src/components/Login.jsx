@@ -2,22 +2,23 @@ import React, { useContext, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { UserContext } from '../Store'
 
-export default function Login() {
+export default function Login()   {
     const store = useContext(UserContext)
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const emailref = useRef();
     const passwordref = useRef();
     const navigate = useNavigate();
-    let handleSubmit = (event) => {
+    let handleSubmit = (event) =>{
         event.preventDefault();
         emailref.current.style.borderColor = "black";
         passwordref.current.style.borderColor = "black";
         if (email.length === 0) {
             emailref.current.style.borderColor = "red";
             return;
+            
         }
-        if (password.length === 0) {
+        if (password.length === 0)   {
             passwordref.current.style.borderColor = "red";
             return;
         }
@@ -30,7 +31,7 @@ export default function Login() {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({email:email,password:password}),
-        }).then(
+        } ).then(
             (res) => {
                 return res.json();
             }
@@ -65,6 +66,7 @@ export default function Login() {
                 <button className='LoginBtn' onClick={handleSubmit}>Log in</button>
                 <p className='loginfooter'>Create an account <Link to="/SignUp">sign in</Link></p>
             </form>
+      
         </div>
-    )
+)
 }
