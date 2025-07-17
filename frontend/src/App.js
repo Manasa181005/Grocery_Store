@@ -2,7 +2,7 @@ import './CSS/Home.css'
 import './CSS/NavBar.css';
 import './CSS/Shop.css';
 import './CSS/Cart.css';
-import './CSS/Login.css';
+import './CSS/Login.css' ;
 import Home from './components/Home';
 import NavBar from './components/NavBar';
 import Shop from './components/Shop';
@@ -30,14 +30,16 @@ function App() {
     if(user){
       setLogin(true)
     }
-  },[])
-  return (
+    
+  }, [])
+  return  (
+    
     <> 
     <UserContext.Provider  value={{cartList,setcartList,cartDetail,setCartDetail,hash,setHash,searchList,setsearchList,SearchcartList,setSearchcartList,login:login,setLogin:setLogin}}>
       <BrowserRouter>
         <NavBar></NavBar>
         <Routes>
-          <Route path='/' element={<Home ></Home>} />
+          <Route path='/' element={<Home ></Home>}  />
           <Route path='/Shop' element={<Shop></Shop>} />
           <Route path='/Cart' element={<Cart></Cart>} />
           <Route path='/Login' element={<Login></Login>} />
@@ -47,7 +49,7 @@ function App() {
       </BrowserRouter>
     </UserContext.Provider>
     </>
-  );
+  ) ;
 }
 
 export default App;
