@@ -6,7 +6,7 @@ import Product from './Product'
 import AboutUs from './AboutUs'
 
 
-export default function Home() {
+export default function Home()   {
   return (
     <div>
       <LandingPage></LandingPage>
@@ -16,7 +16,8 @@ export default function Home() {
         <Product Margin={{ "margin": "100px" }}></Product>
       </div>
       <AboutUs></AboutUs>
-      
     </div>
+    
+  
   )
 }
