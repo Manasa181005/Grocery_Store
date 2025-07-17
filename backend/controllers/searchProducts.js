@@ -1,13 +1,13 @@
 const { asyncHandler } = require("../service/asyncHandler.js")
 const { Product } = require("../models/product.model.js")
-let searchProduct = asyncHandler(async (req, res) => {
+let searchProduct = asyncHandler(async (req, res) =>   {
 
-    const { all, search, category } = req.body;
+    const {all, search, category } = req.body;
     let data = await Product.find();
 
     let newData = data.filter((ele) => {
         const regex = new RegExp(`${search.toLowerCase()}`);
-        if (all) {
+        if(all) {
             return true;
         }
         else if (category.length == 0 && !all) {
@@ -26,10 +26,10 @@ let searchProduct = asyncHandler(async (req, res) => {
         else {
             return false;
         }
-    });
+    } ) ;
 
     res.json({ status: true, products: newData });
 
 
-})
+} )
 module.exports = { searchProduct }
